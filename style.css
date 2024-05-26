@@ -1,0 +1,133 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(mont.ttf);
+}
+@font-face {
+  font-family: Termina;
+  src: url(termina.otf);
+}
+
+body {
+  background: linear-gradient(to top right, #0E0E0E, #363636);
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: left;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0em;
+}
+
+.emoji {
+  font-size: 5em;
+  margin-right: 0.2em;
+  align-self: flex-start;
+}
+
+.text {
+  flex: 1;
+}
+
+h1 {
+  font-family: 'Termina', sans-serif;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 0em;
+}
+
+#intro {
+  font-weight: 500;
+}
+
+em {
+  font-style: italic;
+}
+
+.contact-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.contact-buttons .button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.1em;
+  font-family: 'Termina', sans-serif;
+  flex: 1;
+  justify-content: center;
+  width: calc(50% - 10px);
+  margin: 5px;
+}
+
+
+.contact-buttons .telegram {
+  background: linear-gradient(135deg, #009cde, #1da1f2);
+}
+
+.contact-buttons .email {
+  background: linear-gradient(135deg, #303030, #353535);
+}
+
+.contact-buttons img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  .container {
+      padding: 15px;
+  }
+
+  .emoji {
+      font-size: 3em;
+      margin-right: 0.5em;
+  }
+
+  h1 {
+      font-size: 1.8em;
+  }
+
+  p {
+      font-size: 1em;
+      margin-bottom: 1em;
+  }
+
+  .contact-buttons {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  .contact-buttons .button {
+      width: 100%;
+      margin: 0.5em 0;
+      padding: 15px;
+  }
+}
